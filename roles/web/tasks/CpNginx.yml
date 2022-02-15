@@ -1,0 +1,7 @@
+---
+- name: nignx.conf
+  template:
+    src: templates/nginx.conf
+    dest: /etc/nginx/nginx.conf
+    force: yes
+  become: yes

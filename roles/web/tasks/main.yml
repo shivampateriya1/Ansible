@@ -1,0 +1,17 @@
+#main install and copy all the resources
+---
+- name: installing nginx
+  apt:
+    name: nginx
+    update_cache: yes
+    state: latest
+  become: yes
+
+
+- import_tasks: CpNginx.yml
+ 
+- import_tasks: shivamconfig.yml
+
+- import_tasks: websitepages.yml
+  notify: 
+    - restart nginx

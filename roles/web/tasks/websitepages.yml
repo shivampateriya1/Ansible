@@ -1,0 +1,6 @@
+---
+- name: copy html pages
+  copy:
+    src: files/shivam
+    dest: /var/www/
+  become: yes

@@ -1,0 +1,9 @@
+[GCP]
+10.128.0.6
+
+[Shivam]
+10.128.0.7 ansible_user=shivam_pateriya ansible_ssh_private_key_file=~/.ssh/shivam
+
+[GCP:vars]
+ansible_user=shivam_pateriya
+ansible_ssh_private_key_file=~/.ssh/jeknkins_file

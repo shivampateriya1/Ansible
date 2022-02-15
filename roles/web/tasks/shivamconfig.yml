@@ -1,0 +1,7 @@
+---
+- name: copy nginx conf
+  template: 
+    src: templates/conf.d/shivamweb.conf
+    dest: /etc/nginx/conf.d/shivamweb.conf
+    force: yes
+  become: yes
